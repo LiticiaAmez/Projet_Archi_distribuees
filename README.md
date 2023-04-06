@@ -1,15 +1,20 @@
 # Projet_Archi_distribuees
 Développement d'une pipeline big data
+
+
 Membres :
 •	BENMECHICHE Khaled 
 •	AMEZIANE Liticia 
 •	MESBAHI Lydia
 
 Le but de notre projet est de voir à travers différents traitements et visualisations s’il existe une relation entre les disponibilités des vélib (Usage des vélos) et les facteurs météorologiques. 
+
 Nous avons utilisé deux principales sources de données : 
+
 API 1 : Vélib - Vélos et bornes - Disponibilité temps réel 
 Source : Vélib - Vélos et bornes - Disponibilité temps réel — Paris Data 
 On a choisi l’API Vélib Métropole car c’est le plus grand service de vélos partagés au monde incluant des vélos électriques rechargeables en station. Il permet de connaître en temps réel le nombre de vélos mécaniques/électriques à chaque station ainsi que le nombre de bornettes libres. 
+
 L’API nous fournit : 
 -	stationcode : numéro unique d’identification de la station. Ce numéro identifie la station au sein du service Vélib’ Métropole 
 -	name : nom de la station 
@@ -22,7 +27,9 @@ L’API nous fournit :
 -	capacity : nombre de vélos que la station peut recevoir 
 -	mechanical : nombre de vélos mécanique disponible 
 -	ebike : nombre de vélos électriques disponible 
+
 Les données sont actualisées chaque heure. 
+
 Les paramètres de l’API : 
 -	Rows : le nombre de ligne qu’on veut récupérer (nous avons choisi 500 
 lignes) 
@@ -72,7 +79,7 @@ Nous avons choisi France - Ile-de-France - Paris et nous avons obtenu comme ID :
 Réponse : https://api.tutiempo.net/json/?lan=fr&apid=zsTzaXzqqqXbxsh&lid=39720 
 
 
- Les technologies utilisées :
+ --Les technologies utilisées :
 •	SparkStreaming
 •	Kafka 
 •	Docker 
