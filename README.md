@@ -12,7 +12,8 @@ Le but de notre projet est de voir à travers différents traitements et visuali
 Nous avons utilisé deux principales sources de données : 
 
 API 1 : Vélib - Vélos et bornes - Disponibilité temps réel 
-Source : Vélib - Vélos et bornes - Disponibilité temps réel — Paris Data 
+Source : Vélib - Vélos et bornes - Disponibilité temps réel — Paris Data
+
 On a choisi l’API Vélib Métropole car c’est le plus grand service de vélos partagés au monde incluant des vélos électriques rechargeables en station. Il permet de connaître en temps réel le nombre de vélos mécaniques/électriques à chaque station ainsi que le nombre de bornettes libres. 
 
 L’API nous fournit : 
@@ -42,7 +43,9 @@ lignes)
 ●	is_installed = OUI 
 -	Timezone : Le fuseau horaire utilisé pour interpréter les dates et heures dans la requête et les données de la réponse. Le fuseau horaire pris en considération. 
 ●	Europe/Paris 
+
 La réponse et les clés possibles : 
+
 -	Réponse : 
 https://opendata.paris.fr/api/records/1.0/search/?dataset=velibdisponibilite-en-tempsreel&q=&rows=500&sort=duedate&facet=is_installed&facet=nom_arrondis sement_communes&refine.nom_arrondissement_communes=Paris&refine
 .is_installed=OUI&timezone=Europe%2FParis 
@@ -50,6 +53,7 @@ https://opendata.paris.fr/api/records/1.0/search/?dataset=velibdisponibilite-en-
  
   
 API 2 : Météo 
+
 Source : Météo sur votre site Web avec JSON - Tutiempo 
 C’est une API qui fournit des informations sur des données météorologiques selon la localité et la ville. 
 L’API nous fournit : 
@@ -71,11 +75,10 @@ https://api.tutiempo.net/json/?lan={lan}&apid={Clé API}&lid={lid}
 -	ID de la ville : {lid} 
 Pour avoir l’ID de la ville, il faut sélectionner un pays ensuite une division et enfin une ville. 
 Nous avons choisi France - Ile-de-France - Paris et nous avons obtenu comme ID : 39720 
- 
-  
 -	lan : “fr” 
 -	clé API : “zsTzaXzqqqXbxsh” 
 -	lid : “39720” 
+
 Réponse : https://api.tutiempo.net/json/?lan=fr&apid=zsTzaXzqqqXbxsh&lid=39720 
 
 
